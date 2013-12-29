@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_xpoll/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="title"
+			type="text"
+			label="COM_XPOLL_XPOLL_FIELD_TITLE_LABEL"
+			description="COM_XPOLL_XPOLL_FIELD_TITLE_DESC"
+			size="40"
+			class="input-xlarge"
+			required="true"
+			default=""
+			labelclass="control-label"
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_xpoll"
+			class="inputbox"
+			default=""
+			label="COM_XPOLL_XPOLL_FIELD_CATID_LABEL"
+			description="COM_XPOLL_XPOLL_FIELD_CATID_DESC"
+                        labelclass="control-label"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+                <field 
+                        name="answer"
+                        type="answer"
+                >
+                </field>
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="radio"
+				class="btn-group"
+				label="COM_XPOLL_XPOLL_FIELD_SHOW_CATEGORY_LABEL"
+				description="COM_XPOLL_XPOLL_FIELD_SHOW_CATEGORY_DESC"
+				default=""
+				labelclass="control-label"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+	<fieldset name="accesscontrol">
+		<field name="asset_id" type="hidden" filter="unset" />
+		<field name="rules"
+				type="rules"
+				label="JFIELD_RULES_LABEL"
+				translate_label="false"
+				filter="rules"
+				validate="rules"
+				class="inputbox"
+				component="com_xpoll"
+				section="xpoll"
+		/>
+	</fieldset>
+</form>

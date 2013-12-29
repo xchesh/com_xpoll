@@ -1,0 +1,14 @@
+/* 
+    Document   : xpoll
+    Created on : 03.04.2013, 13:58:43
+    Author     : cheshenkov
+    Description:
+        Purpose of the stylesheet follows.
+*/
+div.tab-content div#media2 div.answer{
+    display: block;
+    margin: 1% 0;
+}
+div.tab-content div#media2 div.answer input{
+    height: 14px;
+}

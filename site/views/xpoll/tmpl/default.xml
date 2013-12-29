@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_XPOLL_XPOLL_VIEW_DEFAULT_TITLE">
+		<message>COM_XPOLL_XPOLL_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="catid"
+				type="category"
+                                extension="com_xpoll"
+				label="COM_XPOLL_XPOLL_FIELD_CATEGORY_LABEL"
+				description="COM_XPOLL_XPOLL_FIELD_CATEGORY_DESC"
+			>
+                            
+                        </field>
+		</fieldset>
+	</fields>
+</metadata>
